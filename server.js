@@ -2,13 +2,13 @@
 let express = require('express');
 let api_routes = require('./routes/api.js')
 //require path
-// let path = require('path')
+let path = require('path')
 //app config
 let app = express();
 
 //Server vue client files
-// let vueClientPath = path.join(__dirname, 'student-sign-in-client', 'dist')
-// app.use(express.static(vueClientPath))
+let vueClientPath = path.join(__dirname, 'student-sign-in-client', 'dist')
+app.use(express.static(vueClientPath))
 
 //handle requests with JSON bodies
 app.use(express.json())
