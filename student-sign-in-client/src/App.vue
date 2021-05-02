@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>Student Sign In</h1>
     <new-student-form v-on:student-added="newStudentAdded"></new-student-form>
     <student-table
       v-bind:students="students"
@@ -95,6 +96,15 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 50px;
+}
+body {
+  background-color: #eee;
+}
+h1 {
+  padding: 10px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
 }
 </style>

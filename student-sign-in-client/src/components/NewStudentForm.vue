@@ -65,4 +65,16 @@ export default {
 </script>
 
 <style>
+#app {
+  margin-bottom: 50px;
+}
+.card-title {
+  font-size: 3.2ch;
+  font-weight: bold;
+}
+label {
+  font-size: 2.3ch;
+  font-weight: bold;
+  color: rgb(76, 82, 82);
+}
 </style>
